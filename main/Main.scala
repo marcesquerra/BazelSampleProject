@@ -1,5 +1,5 @@
 package main
 
 object Main extends App {
-  println("Hellor5h")
+  println("Hellor9h")
 }
