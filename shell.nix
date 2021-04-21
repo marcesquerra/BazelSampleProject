@@ -3,6 +3,8 @@
 let
   nazelisk = import (../nazelisk/default.nix);
   bazel = nazelisk ./.;
+  tfnix = import (../tfnix/default.nix);
+  terraform = tfnix ./.;
 in
   pkgs.mkShell {
     buildInputs = [
@@ -10,6 +12,7 @@ in
 
       # keep this line if you use bash
       pkgs.bashInteractive
-      bazel
+      # bazel
+      terraform
     ];
   }
