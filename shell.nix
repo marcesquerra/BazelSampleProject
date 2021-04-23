@@ -13,6 +13,6 @@ in
       # keep this line if you use bash
       pkgs.bashInteractive
       # bazel
-      terraform
+      (terraform.withPlugins(p: with p; [ random ]))
     ];
   }
